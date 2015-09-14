@@ -1,9 +1,9 @@
 ---
 layout: post
 title: JavaScript (!) for dummies #1
-status: draft
+#status: draft
 type: post
-published: false
+published: true
 comments: true
 ---
 
