@@ -7,7 +7,7 @@ published: true
 comments: true
 ---
 
-Every single JS course begins with standard crap like explaining every single operator, which in my opinion might be a little bit pointless due to fact that everyone of us (programmers) usually know basic mathematic like subtraction or multiplication. So what's the point of explaining how "*" operator works? Let's get into to the real meat.
+Every single JS course begins with standard crap like explaining every single operator, which in my opinion might be a little bit pointless due to fact that everyone of us (programmers) usually know basic mathematics like subtraction or multiplication. So what's the point of explaining how "*" operator works? Let's get into to the real meat.
 
 {% highlight javascript %}
 //Write on document
@@ -67,3 +67,9 @@ Let's start with something really simple. Let's create some divs! Everyone loves
   - Generate random amount of green divs<br/>
   - Generate three rows of dives, each row with random color<br/>
   - Generate two column table. In each row in one column write random number from 1-1000 and in the another one write boolean value whether the neighbour number is prime
+
+
+ PS: If you read till this point you might appreciate this little snippet:
+ {% highlight javascript %}
+ "#" + Math.round(Math.random()*255*255*255).toString(16)
+ {% endhighlight %}
