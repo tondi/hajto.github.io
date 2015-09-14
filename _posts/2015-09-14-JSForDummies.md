@@ -55,7 +55,9 @@ Let's start with something really simple. Let's create some divs! Everyone loves
   function getRandomColorFragment(){
     return Math.round(Math.random()*255)
   }
-  var randomColor = "rgb("+getRandomColorFragment()+","+getRandomColorFragment()+","+getRandomColorFragment()+")"
+  var randomColor = "rgb("+getRandomColorFragment()
+    +","+getRandomColorFragment()
+    +","+getRandomColorFragment()+")"
   //and i got "rgb(118,107,239)"
   {% endhighlight %}
 
