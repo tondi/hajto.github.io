@@ -4,7 +4,7 @@ title: "JavaScript (!) for dummies #2"
 status: draft
 type: post
 published: true
-visible: 1
+visible: 0
 comments: true
 ---
 Yey! Now we know a lot about JS. It's time to make our code react to users actions. JS handles such things using concepts called EventListeners. If you want program to react on users click you'll have to "create" an event suitable listener. But how we are gonna do that? Every single listener is assigned in the same manor.
