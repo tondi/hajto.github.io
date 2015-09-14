@@ -27,7 +27,7 @@ Let's start with something really simple. Let's create some divs! Everyone loves
  element.style.width = "100px"
  element.style.height = "100px"
 
- document.getElementById("someId).appendChild(element)
+ document.getElementById("someId").appendChild(element)
 
  //if you want append element to the raw page you can do that by
  body.appendChild(element)
