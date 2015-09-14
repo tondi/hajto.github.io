@@ -1,6 +1,10 @@
 ---
 layout: post
 title: You're up and running!
+status: draft
+type: post
+published: false
+comments: true
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
