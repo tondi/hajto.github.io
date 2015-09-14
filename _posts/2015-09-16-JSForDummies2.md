@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript (!) for dummies #2 Making your work more responsive, handling HTML element objects
+title: "JavaScript (!) for dummies #2 Making your work more responsive, handling HTML element objects"
 #status: draft
 type: post
 published: true
