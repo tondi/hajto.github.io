@@ -1,13 +1,13 @@
 ---
 layout: post
 title: "JavaScript (!) for dummies #2"
-#status: draft
+status: draft
 type: post
 published: true
 comments: true
 ---
 
-<h2>#2 Making your work more responsive, handling HTML element objects</h2>
+<!--<h2>#2 Making your work more responsive, handling HTML element objects</h2>-->
 
 Yey! Now we know a lot about JS. It's time to make our code react to users actions. JS handles such things using concepts called EventListeners. If you want program to react on users click you'll have to "create" an event suitable listener. But how we are gonna do that? Every single listener is assigned in the same manor.
 
