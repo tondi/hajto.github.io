@@ -1,6 +1,6 @@
 ---
 layout: post
-title: JavaScript (!) for dummies #1
+title: JavaScript (!) for dummies #1 Basic random stuff
 #status: draft
 type: post
 published: true
@@ -59,6 +59,20 @@ Let's start with something really simple. Let's create some divs! Everyone loves
     +","+getRandomColorFragment()
     +","+getRandomColorFragment()+")"
   //and i got "rgb(118,107,239)"
+  {% endhighlight %}
+
+  Hmm... We have tiny little element missing.. How the heck we will run something multiple times? Should we just copy and paste? Hell no! Fortunately some very wise person invented thing called loops. Loops are concept that literally loop some amount of code. (executes it multiple times)
+
+  {% highlight javascript %}
+  var someNumber = 55
+  for(var i = 0; i < someNumber; i++){
+   //some code
+   console.log(i)
+  }
+
+  //Important warning i should be accesible here after loop finishes
+  //due to JS weird closures
+  console.log(i)
   {% endhighlight %}
 
   Now it's only matter of combining two following concepts into one beautifully working masterpiece, but i'll leave that to you. I will give you example solution in next material.
