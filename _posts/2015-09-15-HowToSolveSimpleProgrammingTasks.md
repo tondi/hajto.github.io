@@ -14,18 +14,16 @@ comments: true
   
   Let's take a simple example. Changing background color of div?
   
-  <pre>
-  + First you will probably think how those colors are set.
-  - The answer is simple using our good old buddy "styles"
+  Q: First you will probably think how those colors are set.
+  A: The answer is simple using our good old buddy "styles"
   
-  + How do i change elements style?
-  - By using element.style.something = somethingElse
+  Q: How do i change elements style?
+  A: By using element.style.something = somethingElse
   
-  + What property describes background color?
-  - background-color of course, which is backgroundColor in js notation
+  Q: What property describes background color?
+  A: background-color of course, which is backgroundColor in js notation
    
-  + How do i get the "element"
-  - If you don't know ask all knowing uncle google!
-  </pre>
+  Q: How do i get the "element"
+  A: If you don't know ask all knowing uncle google!
   
   Was it that hard? No? Great! But what if it's more complicated, like you would have to change background color of 1000 divs that you don't know id of? Ask yourself about it and try to figure it out, most if it is written just above. Why don't you figure it right now and test? It might be great breakthrough in fight with your problem.
