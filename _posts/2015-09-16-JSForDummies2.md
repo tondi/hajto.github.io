@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "JavaScript (!) for dummies #2"
-status: draft
+status: released
 draft: false
 type: post
 published: true
