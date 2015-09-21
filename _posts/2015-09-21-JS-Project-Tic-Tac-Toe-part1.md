@@ -24,7 +24,7 @@ comments: true
     createdElement.className = "class1 class2"
     //adding some event listeners
     createdElement.addEventListener("click",function(event){
-        //do some awesome onClick stuff here
+      //do some awesome onClick stuff here
     },false)
    {% endhighlight %}
    
@@ -39,15 +39,15 @@ comments: true
    {% endhighlight %}
    
    {% highlight javascript %}
-      var elementsCount = 3;
-      //c stands for columns, r stands for rows
-      for(var c = 0; c < elementsCount; c++){
-       for(var r = 0; r < elementsCount; r++){
-        //create Your elements here
-        //I suggest assigning margin-left or left to width * numberOfElement
-        //and assigning margin-right or right to width * numberElement
-       }
-      } 
+    var elementsCount = 3;
+    //c stands for columns, r stands for rows
+    for(var c = 0; c < elementsCount; c++){
+     for(var r = 0; r < elementsCount; r++){
+      //create Your elements here
+      //I suggest assigning margin-left or left to width * numberOfElement
+      //and assigning margin-right or right to width * numberElement
+     }
+    } 
    {% endhighlight %}
    
    So i guess that your model element might be just a little bit too big, isn't it? Wouldn't be awesome to make it always fit on the screen? So every screen has two dimensions width and height and if you want to make your playground always visible you have to take the lower value and based on that calculate each blocks width. It's worth noting that every element besides width have also padding and margin you have to take in count. Here's the equation you will have to implement.
@@ -61,7 +61,7 @@ comments: true
    So if you want have pure width you have to manipulate it like so.
    
    {% highlight javascript %}
-       width = computationalWidth / numberOfElements - margin - padding
-       //Where padding and margin are constants that you declared in CSS
-       // ofcourse you have to type them manually in JS
+    width = computationalWidth / numberOfElements - margin - padding
+    //Where padding and margin are constants that you declared in CSS
+    // ofcourse you have to type them manually in JS
    {% endhighlight %}
