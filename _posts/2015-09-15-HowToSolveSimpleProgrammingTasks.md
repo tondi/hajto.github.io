@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "How to solve simple programming tasks"
+title: "How to fight feeling of empty head when solving simple programming tasks"
 status: draft
 draft: true
 type: post
@@ -8,7 +8,7 @@ published: true
 comments: true
 ---
 
-  Have ever received task to accomplish and had no idea what to begin with? Don't hate this annoying sense of helplessness? Don't worry we will fix that!
+  Have you ever received task to accomplish and had no idea where to begin with? Don't you hate this annoying sense of helplessness? Don't worry we will fix that!
   
   Actually the simplest and most effective way to do any assignment is to think about it in revers. What i mean is to take an desirable effect and think about the first littlest step to accomplish that.
   
