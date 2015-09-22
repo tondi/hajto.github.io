@@ -9,7 +9,8 @@ comments: true
 ---
 Yey! Now we know a lot about JS. It's time to make our code react to users actions. JS handles such things using concepts called EventListeners. If you want program to react on users click you'll have to "create" an event suitable listener. But how we are gonna do that? Every single listener is assigned in the same manor.
 
-<!--<h2>#2 Making your work more responsive, handling HTML element objects</h2>-->
+<!--more-->
+<h2>#2 Making your work more responsive, handling HTML element objects</h2>
 
 {% highlight javascript %}
   htmlObject.addEventListener("listerName",callback,bobbing)

@@ -8,7 +8,8 @@ comments: true
 ---
 Every single JS course begins with standard crap like explaining every single operator, which in my opinion might be a little bit pointless due to fact that everyone of us (programmers) usually know basic mathematics like subtraction or multiplication. So what's the point of explaining how "*" operator works? Let's get into to the real meat.
 
-<!--<h2>#1 Basic random stuff</h2>-->
+<!--more-->
+<h2>#1 Basic random stuff</h2>
 
 {% highlight javascript %}
 //Write on document
