@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "JS Project #1: Tic Tac Toe"
-status: draft
-draft: true
+title: "JS Project #1: Tic Tac Toe p1"
+status: released
+#draft: true
 type: post
 published: true
 comments: true
@@ -13,7 +13,7 @@ comments: true
    
    <h2>1. Drawing some blocks! </h2>
    
-   The first we need to do is make some blocks that will represent the game's playground. Most of Tic-Tac-Toe implementations offer playground in square sizes for example 3x3, 4x4, 5x5 so will ours. So to begin something we need to create some that will be clickable blocks. You might want to look at me previous article about this. [Previous]({% post_url 2015-09-14-JSForDummies1 %})
+   The first we need to do is make some blocks that will represent the game's playground. Most of Tic-Tac-Toe implementations offer playground in square sizes for example 3x3, 4x4, 5x5 so will ours. So to begin something we need to create some that will be clickable blocks. You might want to look at me previous article about this. [Link]({% post_url 2015-09-14-JSForDummies1 %})
    
    {% highlight javascript %}
     //Creation of an HTML element for example div
