@@ -43,8 +43,8 @@ var array = [1,2,3]
 alert(array.length)
 //let's put that into the for loop
 for(var i = 0; i < array.length; i++ ){
-//do something more useful
-console.log(array[i])
+  //do something more useful
+  console.log(array[i])
 }
 {% endhighlight %}
 
@@ -53,8 +53,10 @@ Cool! But what if array have more than dimension? The answer is very simple, mor
 {% highlight javascript %}
 var array = [[1,2,3],[3,2],[1,2,3,4]]
 for(var i = 0; i<array.length;i++)
-for(var j = 0; j< array[i].length; j++)
-console.log("cell "+i+","+j+" contains number "+array[i][j])
+  for(var j = 0; j< array[i].length; j++)
+    console.log("cell "+i+","+j+" contains number "+array[i][j])
 {% endhighlight %}
 
-If you'll run the code you'll find out that it prints every single element without concerning whether the dimensions of inside array have changed. It does that because array[1] return another array [3,2] which has it's independent .length field. 
+If you'll run the code you'll find out that it prints every single element without concerning whether the dimensions of inside array have changed. It does that because array[1] return another array [3,2] which has it's independent .length field.
+
+Exercises: WIP
