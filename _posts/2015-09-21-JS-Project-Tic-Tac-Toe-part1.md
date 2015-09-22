@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "JS Project #1: Tic Tac Toe p1"
-status: released
+#status: released
 #draft: true
 type: post
 published: true
