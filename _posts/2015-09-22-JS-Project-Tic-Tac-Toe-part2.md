@@ -8,6 +8,10 @@ comments: true
 
   I have receiver many requests about making some guidelines materials about making Tic-Tac-Toe school project on PhoneGap. I won't cover PhoneGap strict part of job because that's actually very easy. The think i will do is breaking this project in smaller accomplishable parts.
    
+   
+   
+   
+   
    <h2>2. Let's make it interactive! </h2>
    
    In previous article i have shown you how to draw a perfectly scaled playfield. Let's make it a little bit reactive. In [second]({% post_url 2015-09-14-JSForDummies2 %}) article i showed you how to add some event listeners to HTML elements. Let's do that. In the loop we wrote previous time we should add some onClicks. 
