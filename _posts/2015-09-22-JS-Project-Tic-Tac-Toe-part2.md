@@ -9,7 +9,7 @@ comments: true
 
   I have receiver many requests about making some guidelines materials about making Tic-Tac-Toe school project on PhoneGap. I won't cover PhoneGap strict part of job because that's actually very easy. The think i will do is breaking this project in smaller accomplishable parts.
    
-   <!--more-->
+<!--more-->
    
    <h2> 2. Let's make it interactive! </h2>
    
