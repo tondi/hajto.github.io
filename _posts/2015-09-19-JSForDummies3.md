@@ -28,7 +28,7 @@ console.log(array[2][1]) //will log 1
 
 Arrays in JS can be jagged. What does it mean? I means that if you more than one dimensions the sizes don't have to be even. The following code fully legal.
 
-{% highlight javascript %}
+{% highlight javascript lineos %}
 var array = [[1],[3,2,1],[2,2]]
 array[0] // returns array containing 1
 array[1] //returns array containing 3,2 and 1
