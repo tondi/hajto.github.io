@@ -1,8 +1,8 @@
 ---
 layout: post
 title: "JS Project #1: Tic Tac Toe p3"
-status: draft
-draft: true
+status: realeased
+#draft: true
 type: post
 published: true
 comments: true
@@ -44,6 +44,19 @@ function checkHorizontally(numberwearelookingfor, onWin){
 {% endhighlight %}
 
 In above code i'm using De Morgan's laws. If every element is not different then an element X that means all of them are same as element X. You should also note the onWin variable. This code is designed to call onWin when it founds the win so if you want to use it, you have to either pass a function as onWin parameter or comment call. Figuring other i will leave for you.
+
+
+Example call:
+{% highlight javascript %}
+//assuming that 1 is X
+checkHorizontally(1, function(){
+  alert("X Won")
+})
+
+//We could simplify it even further
+function Xwon(){ alert("X Won)}
+checkHorizontally(1, Xwon)
+{% endhighlight %}
 
 Some hints:
 - when detecting "cross" wins you will need only one loop
