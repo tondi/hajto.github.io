@@ -3,7 +3,7 @@ layout: post
 title: "Living with a gaming laptop..."
 status: draft
 type: post
-published: true
+published: released
 draft: true
 comments: true
 ---
@@ -31,7 +31,7 @@ For starters, here is full spec:
 | Weight | 5.95 lbs |
 | Dimensions | 15.23 x 10.19 x 0.61-1.41"|
 
-I've been using it since July 2014 and ever since that day it was pain in my very butt. I believe it had screen defect and it broke down even before I had a chance to use it. (and it costed my about 200$ to repair {screen itself is buyable at 60$}, because mechanical issues are not covered by warrantee). I spent 3 months of going back and forth between services trying to fix...
+I've been using it since July 2014 and ever since that day it was pain in my very butt. I believe it had screen defect and it broke down even before I had a chance to use it. (and it costed my about 200$ to repair {screen itself is buyable at 60$}, because mechanical issues are not covered by warranty). I spent 3 months of going back and forth between services trying to fix...
 
 After settling that I could finally use my death machine! Hell Yeah! Can you imagine being able to bring your powerfull setups and play your favorite games everywhere? For examle in shoping mall waiting in queue to Orange employee to fix your phone or smth? Yeah that's the gratest feeling ever! Playing Witcher 3 in amazing 6 frames per second with blazing ball of fire on your laps... And battery lasted for about 30 minutes!
 
