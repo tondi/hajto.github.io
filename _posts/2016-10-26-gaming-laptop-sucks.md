@@ -1,10 +1,10 @@
 ---
 layout: post
 title: "Living with a gaming laptop..."
-status: draft
+status: released
 type: post
 published: released
-draft: true
+draft: false
 comments: true
 ---
 
@@ -42,3 +42,5 @@ If you want check whether you'll be able to carry one of those monsters just thr
 The next big issue is material that this laptop is made of. It barely resists anything. After 2 years of everyday use outside of home, laptop acompanied me in at least 40 000km of travel. Which to be honest is not that much. I've been carrying it with me on a bus, on a car seat etc and now almost every plastic element is broken. Literally. The graphics card radiator is just missing (I think it couldn't resist heat from the card though), the backplate is broken in at least on place (near the sound ports, that doesn't work properly now ofc...). It is also worth to mention that camera is not working and I doubt it ever did...
 
 But of course there are also a lot of positive sides of having portable powerhorse. You can run almost as many of docker machines as you might ever want. You can learn and try Big Data frameworks that usually requires a lot of computational power. But is it worth the price? I don't realy think so...
+
+The sole possible purpose of this computer is work at home. But why would you buy laptop to work at home constantly connected to power grid?
