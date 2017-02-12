@@ -8,7 +8,7 @@ draft: true
 comments: true
 ---
 
-I was trying to present basic concepts of Elixir to my friends, but each time they would rathey stay with their boring imperative languages.. They usually find it overcomplicated. I think that's time to change that.
+I was trying to present basic concepts of Elixir to my friends, but each time they would rather stay with their boring imperative languages.. They usually find it overcomplicated. I think that's time to change that.
 
 <!--more-->
 
@@ -16,7 +16,7 @@ Most of commonly used languages revolve around two basic operations: assigment a
 
 ## Patern Matching
 
-Someone probably would say that Elixir has `=` operator and he would be right. But this operator in Elixir is much more powerfull. It does not simply assign value to a variable. It's more like mathematical `=`. When you solve a mathematical equation you don't assign value to X, you look for X that matches a pattern. Same thing applie for Elixir.
+Someone probably would say that Elixir has `=` operator and he would be right. But this operator in Elixir is much more powerfull. It does not simply assign value to a variable. It's more like mathematical `=`. When you solve a mathematical equation you don't assign value to X, you look for X that matches a pattern. Same thing applies for Elixir.
 
 Let's consider a pair of x and y. You know that that pair is equal to (1,2). So you know that x is 1 and y is 2. Elixir can do pretty much same thing. Similarly if you have pair (x,2) and it should be equal to (1,3) you know that their is no such element that substituted for x would match the pattern! So pattern matching (that's how `=` is actually called) must fail!
 
@@ -53,7 +53,7 @@ def friend_of_2({x,2}), do: x
 first({1,2}) #Will return 1
 second({1,2}) #Will return 2
 friend_of_2({1,2}) #Will return 1
-friend_of_2({2,3}) #Will return an rerror saying that there is no such function, because it doesnt match the pattern
+friend_of_2({2,3}) #Will return an error saying that there is no such function, because it doesnt match the pattern
 {% endhighlight %}
 
 Given these tools you can achieve most of the things much faster
