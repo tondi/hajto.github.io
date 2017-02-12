@@ -49,15 +49,21 @@ def name(pattern) do
 end
 {% endhighlight %}
 
-Remember when I said that pattern matching is awesome and it can fail? You can do it in function clauses! Function will only execute when pattern matching on it's arguments is successful. So if the argument value is equal 0 it will return 1, if the value is equal to 1 it will return 1 and finally if the value is equal to x which is unbound so it matches everything it will return x times factorial(x-1). But what's doing that little `when` there? It's guarding the domain of the function and it will only let values greater than one in.
+Remember when I said that pattern matching is awesome and it can fail? You can do it in function clauses! Function will only execute when pattern matching on it's arguments is successful. So if the argument value is equal 0 it will return 1, if the value is equal to 1 it will return 1 and finally if the value is equal to x which is unbound so it matches everything it will return x times factorial(x-1). But what's doing that little `when` there? It's guarding the domain of the function and it will only let values greater than one in. That's why `when` is called guard.
 
 
 As you probably realised the last expression in block is the value to be returned. Let's go back to our pair example and tinker a bit with it.
 
 {% highlight elixir %}
 def first({x,_}), do: x
-def second({_,y}), do: y
+def second({_x,y}), do: y
 def friend_of_2({x,2}), do: x
+
+{% endhighlight %}
+
+Wait.. What? Why does it work? There is a new keyword that made it possible (or at least pretty). `_` is used when you don't give a damn about what is being passed as an argument. If you want for some reason to name an argument of function and never plan to use it, please prefix it with `_`, for example `_x`.
+
+{% highlight elixir %}
 
 first({1,2}) #Will return 1
 second({1,2}) #Will return 2
