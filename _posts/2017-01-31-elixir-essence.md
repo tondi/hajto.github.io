@@ -28,9 +28,9 @@ Let's consider a pair of x and y. You know that that pair is equal to (1,2). So 
 
 So now we know what pattern matching kinda is and we know it can fail. So what is the fuss all about? We can pattern match argument of functions actually. Given definition of factorial we can implement it in seconds! We know that:
 
->factorial for x is factorial(x-1)*x for x bigger than 1 <br/>
+>factorial of 0 is 1<br/>
 >factorial of 1 is 1 <br/>
->factorial of 0 is 1.
+>factorial for x is factorial(x-1)*x for x bigger than 1
 
 So we can to that:
 
