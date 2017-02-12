@@ -26,7 +26,13 @@ Let's consider a pair of x and y. You know that that pair is equal to (1,2). So 
 
 ## Functions! Functions everywhere..
 
-So now we know what pattern matching kinda is and we know it can fail. So what is the fuss all about? We can pattern match argument of functions actually. Given definition of factorial we can implement it in seconds! We know that factorial for x is factorial(x-1)*x for x bigger than 1, we also know that factorial of 1 is 1 and factorial of 0 is 1. So we can to that:
+So now we know what pattern matching kinda is and we know it can fail. So what is the fuss all about? We can pattern match argument of functions actually. Given definition of factorial we can implement it in seconds! We know that:
+
+>factorial for x is factorial(x-1)*x for x bigger than 1
+>factorial of 1 is 1
+>factorial of 0 is 1.
+
+So we can to that:
 
 {% highlight elixir %}
 def factorial(0), do: 1
@@ -43,7 +49,10 @@ def name(pattern) do
 end
 {% endhighlight %}
 
-Remember when I said that pattern matching is awesome and it can fail? You can do it in function clauses! Function will only execute when pattern matching on it's arguments is successful. As you probably realised the last expression in block is the value to be returned. Let's go back to our pair example and tinker a bit with it.
+Remember when I said that pattern matching is awesome and it can fail? You can do it in function clauses! Function will only execute when pattern matching on it's arguments is successful. So if the argument value is equal 0 it will return 1, if the value is equal to 1 it will return 1 and finally if the value is equal to x which is unbound so it matches everything it will return x times factorial(x-1). But what's doing that little `when` there? It's guarding the domain of the function and it will only let values greater than one in.
+
+
+As you probably realised the last expression in block is the value to be returned. Let's go back to our pair example and tinker a bit with it.
 
 {% highlight elixir %}
 def first({x,_}), do: x
@@ -56,4 +65,4 @@ friend_of_2({1,2}) #Will return 1
 friend_of_2({2,3}) #Will return an error saying that there is no such function, because it doesnt match the pattern
 {% endhighlight %}
 
-Given these tools you can achieve most of the things much faster
+Given these tools you can achieve most of the things much faster and express your thoughts more naturally.
