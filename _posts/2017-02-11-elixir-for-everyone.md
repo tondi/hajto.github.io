@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Elixir's essence"
+title: "Elixir is for everyone!"
 status: draft
 type: post
 published: released
@@ -8,7 +8,7 @@ draft: true
 comments: true
 ---
 
-I was trying to present basic concepts of Elixir to my friends, but each time they would rather stay with their boring imperative languages.. They usually find it overcomplicated. I think that's time to change that.
+I was trying to present basic concepts of Elixir to my friends, but each time they would rather stay with their boring imperative languages.. They usually find it overcomplicated. I think it's time to finally change that.
 
 <!--more-->
 
@@ -72,3 +72,8 @@ friend_of_2({2,3}) #Will return an error saying that there is no such function, 
 {% endhighlight %}
 
 Given these tools you can achieve most of the things much faster and express your thoughts more naturally.
+
+So... At this point you probably think that you already know this stuff, right? If you feel so, please consider solving those few simple tasks.
+
+- Implement a simple algorithm of choice. For example fibonacci.
+- Write an uber simple function that takes a tupple as an argument
