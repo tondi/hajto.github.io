@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Elixir is for everyone!"
+title: "Elixir is for everyone! The Basics.a"
 status: draft
 type: post
 published: released
