@@ -18,8 +18,7 @@ For starters, here is full spec:
 | ---- | ----------- |
 | Processor | 4th Gen Intel® Core™ i7-4700MQ (2.4GHz 1600MHz 6MB) |
 | Default OS               | Windows 8.1 64 |
-| Display/Resolution | 15.6" FHD LED Glossy Wedge (1920x1080)
-    16:9 widescreen|
+| Display/Resolution | 15.6" FHD LED Glossy Wedge (1920x1080) 16:9 widescreen|
 | Graphics | NVIDIA® GeForce® GT755M 2GB |
 | Memory | 8GB PC3-12800 DDR3L SDRAM 1600 MHz |
 | HDD | 1TB (5400 RPM) + 8GB Hybrid Drive |
