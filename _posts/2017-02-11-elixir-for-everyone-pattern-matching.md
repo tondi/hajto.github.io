@@ -4,7 +4,7 @@ title: "Elixir is for everyone! The Basics."
 status: draft
 type: post
 published: released
-draft: true
+draft: false
 comments: true
 ---
 
@@ -13,6 +13,10 @@ I was trying to present basic concepts of Elixir to my friends, but each time th
 <!--more-->
 
 Most of commonly used languages revolve around two basic operations: assigment and looping. I think that people usually get so confused by Erlang/Elixir because those languages actually don't have any of those tools available for people to use. In fact, they have much greater toys.
+
+## What actually Elixir is?
+
+Some describe Elixir as subset of Erlang, some describe it as general purpose functional programming language. For me it's just an awesome platform for building lightweight scalable applications. If you want perfectly documentet and easy to learn language, go with Elixir!
 
 ## Patern Matching
 
@@ -40,7 +44,7 @@ def factorial(1), do: 1
 def factorial(x) when x > 1, do: factorial(x-1)*x
 {% endhighlight %}
 
-What have we done? We just written factorial in Elixir by simply writing it's definition... Let's go step by step through that code, because there are few structures that may be new for you. You can define functions in Elixir in at least two ways.
+What have we done? We just defined factorial in Elixir by simply writing it's definition... Let's go step by step through that code, because there are few structures that may be new for you. You can define functions in Elixir in at least two ways.
 
 {% highlight elixir %}
 def name(pattern), do: what_to_return
