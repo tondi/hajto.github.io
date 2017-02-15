@@ -6,6 +6,7 @@ type: post
 published: released
 draft: false
 comments: true
+list: etut
 ---
 
 I was trying to present basic concepts of Elixir to my friends, but each time they would rather stay with their boring imperative languages.. They usually find it overcomplicated. I think it's time to finally change that.
