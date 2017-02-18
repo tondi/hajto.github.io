@@ -147,6 +147,15 @@ img.center {
     margin: 0 auto;
 }
 
+img.limit-height {
+    max-height: 500px;
+}
+
+img.center + em {
+    text-align: center;
+    display: block;
+}
+
 /*********************/
 /* LAYOUT / SECTIONS */
 /*********************/
