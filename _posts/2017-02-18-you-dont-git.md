@@ -13,10 +13,15 @@ Nowadays git is like air for programmers. You have to know it, it will come in h
 
 <!--more-->
 
-If you don't know or (what's even worse) feer git, you are gonna have baaaad time... In such situation Git is like that aunt in family that no one really likes, but have to take of her. But when you are gonna make a giant mess you know that she will come and help you out.
+## But I don't like git, it's stupid!
 
-Git is very simple system. I suggest you start with whatever project you like, even a folder with couple of text files will suffice. If you're ready please start terminal of choice and make sure have installed git package from whichever packagemanager you're using.
-The first thing you want to is to type `git init` it will create `.git` directory with bunch of files and folders you don't have to worry about right now. Hurray!! You have successfully started a Git repository! But right now Git have no idea on which files to watch. Imagine that you had a new watch dog. You would make him comfortable and hope that he will bark at everything that touches your things. Next day you wonder where is your beloved car... Dog would look at you in despair, because he didn't bark at thief, because he had no idea that car is yours! Same applies for git. It will protect all your precious files, but have to tell it which files you care about.
+If you don't know or (what's even worse) feer git, you are gonna have baaaad time... In such situation Git is like that aunt in family that no one really likes, but have to take care of her. But when you are gonna make a giant mess you know that she will come and help you out.
+
+Git is very simple system and can be plied to any text based project. I suggest you start with whatever project you like, even a folder with couple of text files will suffice. If you're ready please start terminal of choice and make sure have installed git package from whichever packagemanager you're using.
+
+## Let's get started
+
+The first thing you want to is to type `git init` it will create `.git` directory with bunch of files and folders you don't have to worry about right now. Hurray!! You have successfully started a Git repository! But right now Git have no idea on which files to watch. Imagine that you had a new watch dog. You would make him comfortable and hope that he will bark at everything that touches your things. Next day you wonder where is your beloved car... Dog would look at you with missery in his eyes, because he didn't bark at thief, because he had no idea that car is yours! Same applies for git. It will protect all your precious files, but have to tell it which files you care about.
 
 So let's do it right now. We use command `git add` for that purpose. As a parameter we will pass a path to file that you want to add to tracked files. But what does `tracked` actually mean? In this case tracked files are files which are gonna be added to commit. But w8.. What if we want to track multiple files? Do we really have to add each file manually? No... Git will be also happy enough with directory. So.. if you really want to, you can just pass `.` as a parameter for `git add` and every single file in your root of the project should be added to tracking, because as you probably know by now `.` means current catalog in Linux.
 
@@ -33,6 +38,8 @@ If there is fire in the building just name the commit fire not `ouehnglndsgbergo
 
 ![]({{ site.baseurl }}/images/git-basics/good.png){:class="center limit-height"}
 *Proper commit naming.*
+
+## Using remote
 
 Now that you finally know how to handle git locally it is FINALLY time to take advantage of best git feature. `git remote`! It is collection of commands that will enable you to store a backup copy of your data on *remote* server! If you want to add server connection to your repository use this:
 
