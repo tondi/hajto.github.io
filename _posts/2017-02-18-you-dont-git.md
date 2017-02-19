@@ -67,3 +67,5 @@ git push origin master
 ```
 
 Will push all commits from default branch to default remote repository.
+
+## Let git ignore it
