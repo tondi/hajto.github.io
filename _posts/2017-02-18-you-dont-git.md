@@ -69,3 +69,24 @@ git push origin master
 Will push all commits from default branch to default remote repository.
 
 ## Let git ignore it
+
+Treat this paragraph like a bonus. It is by any means not required, but it will make your life a lot easier. Remember when I said that `git add .` adds all of the files to tracking? But what if you don't want all of your files to be in the `Repo`. For example you almost never want to have build artifacts version controlled. That's why someone thoughtfull invented `.gitignore`. It's a file that you can create in your repository root and you can put files and patterns that will be ignored. If you are too lazy (like me) you can download working one from <a href="https://github.com/github/gitignore"> Github </a>. So if you want to use one, just create new file called `.gitignore`, open it and paste contents copied from github. If you want to create one for yourself just put line separated list of files into `.gitignore`.
+
+```gitignore
+.DS_Store
+# App artifacts
+/dev
+/_build
+/db
+/deps
+/*.ez
+# Generated on crash by the VM
+erl_crash.dump
+# The config/prod.secret.exs file by default contains sensitive
+# data and you should not commit it into version control.
+#
+# Alternatively, you may comment the line below and commit the
+# secrets file as long as you replace its contents by environment
+# variables.
+/config/prod.secret.exs
+```
