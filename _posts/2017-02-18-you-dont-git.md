@@ -1,7 +1,8 @@
 ---
 layout: post
-title: "Git it?"
-status: draft
+title: "Do you Git it?"
+status: released
+set: git
 type: post
 published: released
 draft: true
