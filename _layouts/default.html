@@ -9,8 +9,15 @@
       <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
     <![endif]-->
     {% if page.open_image %}
+    {% assign string = page.open_image %}
+    {% assign http = "http" %}
+    {% if string contains http %}
     <meta property="og:image" content="{{ page.open_image }}"/>
     <meta property="og:image:secure_url" content="{{ page.open_image }}" />
+    {% else %}
+    <meta property="og:image" content="{{site.url}}{{ page.open_image }}"/>
+    <meta property="og:image:secure_url" content="{{ site.url }}{{ page.open_image }}" />
+    {% endif %}
     {% endif %}
 
     <script src="https://use.fontawesome.com/5b59f332a1.js"></script>
