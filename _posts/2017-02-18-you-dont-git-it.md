@@ -7,7 +7,7 @@ type: post
 published: released
 draft: true
 comments: true
-open_image: "{{ site.baseurl }}/images/git-basics/ogimage.png"
+open_image: "/images/git-basics/ogimage.png"
 ---
 
 Nowadays git is like air for programmers. You have to know it, it will come in handy sooner or later. There is no point fighting against it. You should just embrace it's possibilities.
