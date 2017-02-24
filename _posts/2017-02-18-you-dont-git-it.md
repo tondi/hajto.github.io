@@ -4,8 +4,6 @@ title: "Do you Git it?"
 status: released
 set: git
 type: post
-published: released
-draft: true
 comments: true
 open_image: "/images/git-basics/ogimage.png"
 ---
