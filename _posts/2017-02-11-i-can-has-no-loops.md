@@ -54,7 +54,7 @@ changed_list = Enum.map(list, &(&1 *2))
 <a href="http://elixirplayground.com?gist=c0bc8b7c45f96add2a772181e69f6f12"> Try for yourself </a>
 
 # Reduction
-It is yet another important operation. It allows you to take a bunch of things and turn into one totally brand new thing. And most common task we all have been through on the beggining of our IT career was performing a summation. So let's just assume that we have to implement such thing right now.
+It is yet another important operation. It allows you to take a bunch of things and turn into one totally brand new thing. And most common task we all have been through on the beginning of our IT career was performing a summation. So let's just assume that we have to implement such thing right now.
 
 <table class="code-samples">
 <tr>
