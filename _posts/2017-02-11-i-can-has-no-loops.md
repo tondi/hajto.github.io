@@ -82,7 +82,7 @@ another_result = Enum.reduce([0 | list], fn element, acc -> element+acc end)
 {% endhighlight %}
 <a href="http://elixirplayground.com?gist=41f708d059bed6a63d71178c3c85421a"> Try for yourself </a>
 
-# # Map & Reduce
+# Map & Reduce
 
 Let's take a little bit harder example that will involve combining those two. Matrix multiplication is very is to implement when we have random access to elements, but as you may noticed we have been only accessing elements sequentially. If we would do this in C we would just take two matrices multiply corresponding elements (row X column, first element in row times first element in the collumn and so forth and so on). And in functional languages that's not very efficient. We technically could operate on parallel rows by `zipping` two rows together. If you recall your math lessons you probably know operation called `matrix transposition`, which is basically swapping rows and columns.
 
