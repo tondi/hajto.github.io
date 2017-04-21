@@ -164,6 +164,15 @@ img.center + em {
 // .masthead
 //
 
+table.code-samples td {
+    width: 50%;
+    border:none;
+}
+
+table.code-samples {
+    border:none;
+}
+
 .wrapper-masthead {
   margin-bottom: 50px;
 }
