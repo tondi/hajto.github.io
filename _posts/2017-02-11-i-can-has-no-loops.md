@@ -17,7 +17,7 @@ I was of course talking about loops. One of very first abstractions that made pr
 In Elixir you don't have traditional loops. Why?! Because all of the Elixir data is immutable. It would make no sense to constantly increment values. As seen in my previous post you can get away with using recursion, but in most cases it can be done using `Enum` module.
 
 # Map & Reduce
-Those two operations are most prominent and well known to functional programmers. The legend says that every operation that transform a collection using loop can be also done using those two functions.
+Those two operations are most prominent and well known to all of functional programmers. The legend says that every operation that transform a collection using loop can be also done using those two functions and that's exactly from where Hadoop MapReduce name comes from.
 
 # Map
 `Enum.map` is basically a function that takes an enumerable (most of collections, lists, maps etc.) as an argument and takes also a function as second argument and applies that function to every single element of the collection and returns new collection. <!-- Too much collections -->
