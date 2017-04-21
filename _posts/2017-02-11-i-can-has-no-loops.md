@@ -16,9 +16,6 @@ I was of course talking about loops. One of very first abstractions that made pr
 
 In Elixir you don't have traditional loops. Why?! Because all of the Elixir data is immutable. It would make no sense to constantly increment values. As seen in my previous post you can get away with using recursion, but in most cases it can be done using `Enum` module.
 
-# Map & Reduce
-Those two operations are most prominent and well known to all of functional programmers. The legend says that every operation that transform a collection using loop can be also done using those two functions and that's exactly from where Hadoop MapReduce name comes from.
-
 # Map
 `Enum.map` is basically a function that takes an enumerable (most of collections, lists, maps etc.) as an argument and takes also a function as second argument and applies that function to every single element of the collection and returns new collection. <!-- Too much collections -->
 
@@ -85,9 +82,9 @@ another_result = Enum.reduce([0 | list], fn element, acc -> element+acc end)
 {% endhighlight %}
 <a href="http://elixirplayground.com?gist=41f708d059bed6a63d71178c3c85421a"> Try for yourself </a>
 
-# Matrix multiplication
+# # Map & Reduce
 
-Let's take a little bit harder example. Matrix multiplication is very is to implement when we have random access to elements, but as you may noticed we have been only accessing elements sequentially. If we would do this in C we would just take two matrices multiply corresponding elements (row X column, first element in row times first element in the collumn and so forth and so on). And in functional languages that's not very efficient. We technically could operate on parallel rows by `zipping` two rows together. If you recall your math lessons you probably know operation called `matrix transposition`, which is basically swapping rows and columns.
+Let's take a little bit harder example that will involve combining those two. Matrix multiplication is very is to implement when we have random access to elements, but as you may noticed we have been only accessing elements sequentially. If we would do this in C we would just take two matrices multiply corresponding elements (row X column, first element in row times first element in the collumn and so forth and so on). And in functional languages that's not very efficient. We technically could operate on parallel rows by `zipping` two rows together. If you recall your math lessons you probably know operation called `matrix transposition`, which is basically swapping rows and columns.
 
 ```
 Sample transposition
@@ -116,5 +113,7 @@ List.zip(matrix)
 Knowing that rest is pretty easy. You have two matrices. First one you'll have to transpose, then zip corresponding rows and reduce them multiplying elements of zipped tuples and summing them. Consider this your homework. Here is an <a href="http://elixirplayground.com?gist=7d0fda1cdec8be55ef761e974f620024"> example solution </a> and sample implementation in one of the elixir existing <a href="https://github.com/a115/exmatrix/blob/master/lib/exmatrix.ex#L58"> libraries </a>.
 
 # Why does this matter?
+
+Those two operations are most prominent and well known to all of functional programmers. The legend says that every operation that transform a collection using loop can be also done using those two functions and that's exactly from where Hadoop MapReduce name comes from.
 
 If you're coming from an imperative ecosystem you probably noticed that this code may be slower than it's imperative counterpart. It has a lot of function calls, a bunch of map and reduce operations... But there is a catch! A big one actually. Most of operations we've done depend on map, zip and reduce implementation. And map can be very easily made parallel! Thus your code can be run simultaneously on all of the cores without any headache (mostly). Actually author of library I mentioned earlier implemented this algorithm in <a href="https://github.com/a115/exmatrix/blob/master/lib/exmatrix.ex#L72" > parallel </a>.
