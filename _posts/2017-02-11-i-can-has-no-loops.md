@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Elixir is for everyone! I can has no loopz?"
-status: draft
+status: released
 type: post
 comments: true
 list: etut
