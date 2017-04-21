@@ -65,6 +65,7 @@ for(int i = 0; i < n; i++){
 </td>
 <td>
 {% highlight elixir %}
+#List is any list of numbers
 Enum.reduce(list, 0, fn element, acc -> element+acc end)
 #or
 Enum.reduce(list, 0,&(&1 + &2))
