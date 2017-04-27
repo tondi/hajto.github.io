@@ -7,11 +7,11 @@ comments: true
 list: etut
 ---
 
-Few days ago I've got a challenge from one of my teachers to write a simple C code without using loops, if and goto. It's a very nice opportunity to use recursion. Oh! And also, do you remember factorial definition from my last post? It was working but it's finally time to improve it so it won't mess your stack!
+Few days ago I've got a challenge from one of my teachers to write a simple C code without using loops, if and goto. It's a very nice opportunity to use recursion and some logic magic.
 
 <!--more-->
 
-First of all, the language I had to use C language. It was a pretty easy piece of code that had an instruction before and after checking loop condition. It looks more or less like this:
+First of all, the language I had to use is C. It was a pretty easy piece of code that had an instruction before and after checking loop condition. It looks more or less like this:
 
 {% highlight elixir %}
 void GoToLoop() {
@@ -25,17 +25,19 @@ pocz:
 }
 {% endhighlight %}
 
-Let's just assume that X and Y are functions that does something that we don't really care at the moment. Unfortunately is very limited when it comes to function magic so we will have to declare some of them explicitly. We also can't use `If` statement, but that's really easy to workaround.
+Let's just assume that X and Y are functions that does something that we don't really care at the moment. We can't use `If` statement, but that's really easy to workaround...
 
 # Lazy AND
 
-Have ever wondered what is the difference between `&` and `&&`? First one is called `binary and` and it performs bitwise operation. It will take two things, treat them as sequence of 1s and 0s and perform `AND` on each bit pair. Of course we can say that when it comes to boolean values we can treat it as `logical and`, because trues is represented as `11111111` and zero is `00000000`, but it has one really important property. It is eagerly evaluated. On the contrary, operator `&&` treats it's operands as boolean values and return a single boolean value. So are probably asking what's the real difference and why have I spent so much time explaining it to you? Because `&&` is lazy evaluated... It means that when it receives false as left param it won't bother to check the right one...
+Have ever wondered what is the difference between `&` and `&&`? First one is called `binary and` and it performs bitwise operation. It will take two things, treat them as sequence of 1s and 0s and perform `AND` on each bit pair. Of course we can say that when it comes to boolean values we can treat it as `logical and`, because trues is represented as `11111111` and zero is `00000000`, but it has one really important property. It is eagerly evaluated so it checks both of its operands first. On the contrary, operator `&&` treats it's operands as boolean values and return a single boolean value. So are probably you are asking what's the real difference and why have I spent so much time explaining it to you? Because `&&` is lazy evaluated... It means that when it receives false as left parameter it won't bother to check the right one...
 
 That's actually key to solving the puzzle. We can implement any `if statement` in such a way:
 
 {% highlight c %}
 !(condition && (iftrue() || true)) && ifelse();
 {% endhighlight %}
+
+First of all it checks whether condition is true. If that's the case it will try to check `iftrue` function result. `||` is put there to make absolutely sure that `iftrue` return will always be considered true. If condition fails (evaluated to false) it's gets negated so `ifelse` is going to be checked.
 
 Unfortunately C doesn't have anonymous functions and both `iftrue` and `ifelse` must return anything that has to be evaluated to true...
 
