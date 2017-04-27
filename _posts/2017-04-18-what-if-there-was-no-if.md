@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "What if we had only functions? How would your life look when there was no if statement.."
-status: draft
+status: released
 type: post
 comments: true
 list: etut
