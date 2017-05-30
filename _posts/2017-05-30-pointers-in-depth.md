@@ -50,3 +50,26 @@ Some of you might be wandering right now... I used `*` in two totally different 
 Some of you may actually now that in C arrays variables are actually reference to their first elements. Even those that are statically allocated.
 
 {% highlight c %}
+#define MAX 10
+
+int fewNumbers[MAX] = {0};
+
+for(int i=0; i < MAX; i++){
+  fewNumbers[i] = i;
+}
+
+int* first = fewNumbers; //reference to first element
+int* last = fewNumbers+(MAX-1); //length - 1 = 9, first + 9 will yield same result
+
+int length = last - first;
+printf("Length: %d\n", length+1);
+
+int* temp = first;
+while(temp != last+1){
+  printf("Index: %d, value: %d\n", temp-first,*(temp));
+  temp++;
+}
+
+{% endhighlight %}
+
+Quite a lot new things there, huh?
