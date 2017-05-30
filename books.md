@@ -4,7 +4,7 @@ title: Library
 permalink: /books/
 ---
 
-One of the best ways to learn is to read some books. Here is list of my favorite positions that taught me programming and more.
+One of the best ways to learn is to read some books. Here is list of my favorite positions that taught me programmingg and more.
 
 <div class="posts">
   {% for post in site.posts %}
@@ -20,5 +20,5 @@ One of the best ways to learn is to read some books. Here is list of my favorite
       <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
     </article>
     {% endif %}
-  {% endfor %}
+    {% endfor %}
 </div>

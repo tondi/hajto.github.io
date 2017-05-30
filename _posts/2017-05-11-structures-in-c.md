@@ -1,10 +1,11 @@
 ---
 layout: post
 title: "Extensive guide for Structures"
-status: draft
+status: released
 type: post
 comments: true
 list: etut
+set: jipp
 ---
 
 For some reason a lot of people in my Group at Uni have quite a lot of problems with understanding concept and usage of Structs (structures) in C.
