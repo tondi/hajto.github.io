@@ -45,7 +45,7 @@ Some of you might be wandering right now... I used `*` in two totally different 
 
 # Pointers as reference to arrays
 
-Some of you may actually now that in C arrays variables are actually reference to their first elements. Even those that are statically allocated.
+Some of you may actually now that in C arrays variables are actually reference to their first elements - even those that are statically allocated.
 
 {% highlight c %}
 #define MAX 10
@@ -71,7 +71,7 @@ while(temp != last+1){
 
 {% endhighlight %}
 
-Quite a lot new things there, huh? You are probably already familiar with `[]` notation, but the way I printed array elements may be new for you. As I said I said earlier, pointers can be understood as addresses. Addresses can be added and subtracted. IF you want to visit next cell you can take current address and add 1 to it. (as I did by `temp++`) Similarly if you want to know how many houses is on a street you can take address of last and subtract address of first one. (that's how variable length was calculated)
+Quite a lot new things there, huh? You are probably already familiar with `[]` notation, but the way I printed array elements may be new for you. As I said earlier, pointers can be understood as addresses. Addresses can be added and subtracted. IF you want to visit next cell you can take current address and add 1 to it (as I did by `temp++`). Similarly if you want to know how many houses are on a street you can take address of last and subtract address of first one (that's how variable length was calculated).
 
 Knowing that we could actually implement our own access function (same as `[]`) as follows.
 {% highlight c %}
