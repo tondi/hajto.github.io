@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Pointers in C in depth"
-status: draft
+status: released
 type: post
 comments: true
 list: etut
