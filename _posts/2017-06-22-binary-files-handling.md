@@ -8,7 +8,7 @@ list: etut
 set: jipp
 ---
 
-Handling binary files isn't as easy as text files. You have to know exact format prior to attempting handling them, but they come with one big advantage. They are much faster to read.
+Handling binary files isn't as easy as text files. You have to know exact format prior to attempting handling them, but they come with one big advantage: they are much faster to read.
 
 # When and why they are used
 

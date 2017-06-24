@@ -8,11 +8,9 @@ list: etut
 set: jipp
 ---
 
-//Introduction here
+Pointers are used in few different ways. They can be used as reference to an array of elements or they can be used as reference to a variable so you can change it and keep the changes.
 
 <!--more-->
-
-Pointers are used in few different ways. They can be used as reference to an array of elements or they can be used as reference to a variable so you can change it and keep the changes.
 
 # Let's start it gently
 Pointers can be understood as an address to a variable. They are much powerful though. You can do quite a lot of math with them too. If you ever actually read a tutorial for `Hello World` in C you probably already encountered them. `scanf` function takes some pointers as it's 2nd-nth argument.
@@ -139,3 +137,5 @@ Let's say you have to implement program that compares different implementation o
 	}
 {% endhighlight %}
 Check the <a href="http://rextester.com/EYLX37632">demo</a>
+
+Unfortunately this topic is far too broad to fit it here. I think it deserves post of it's own, but you should have a general idea of how they work after reading this.
