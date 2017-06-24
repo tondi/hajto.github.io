@@ -8,7 +8,7 @@ list: etut
 set: jipp
 ---
 
-Pointers are used in few different ways. They can be used as reference to an array of elements or they can be used as reference to a variable so you can change it and keep the changes.
+Pointers are used in few different ways. They can be used as reference to an array of elements or as reference to a variable so you can change it and keep the changes.
 
 <!--more-->
 
@@ -22,7 +22,7 @@ scanf("%d", &some);
 
 {% endhighlight %}
 
-What `&` expression does is it gives you `pointer` to place where your variable value is held in memory. If you have only pointer to variable and want the value back you can use `*` operator. You can also use `*` for changing value of variable you have pointer to.
+What `&` expression does is it gives you `pointer` to place where your variable value is held in memory. If you have pointer to variable and you want the value back you can use `*` operator. You can also use `*` for changing value of variable you have pointer to.
 
 {% highlight c %}
 
@@ -41,7 +41,7 @@ printf("Value from pointer: %d", *pointer);
 
 {% endhighlight %}
 
-Some of you might be wandering right now... I used `*` in two totally different ways. And only mentioned one meaning.. If you put `*` AFTER `type` name such as `int` it will mean that you have (`int*`) pointer to integer, which is type of it's own. You can even have such weird types as `int***` which reads as pointer to pointer to pointer to integer. If you place it prior to variable name (`*variable`) it will mean that you want to pick the value from pointer.
+Some of you might be wandering right now... I used `*` in two totally different ways and only mentioned one meaning.. If you put `*` AFTER `type` name such as `int` it will mean that you have (`int*`) pointer to integer, which is type of it's own. You can even have such weird types as `int***` which reads as pointer to pointer to pointer to integer. If you place it prior to variable name (`*variable`) it will mean that you want to pick the value from pointer.
 
 # Pointers as reference to arrays
 
@@ -82,7 +82,7 @@ int access_int(int* array, int index){
 
 {% endhighlight %}
 
-And lets test it out!
+Lets test it out!
 
 {% highlight c %}
 #define MAX 10
@@ -113,7 +113,7 @@ What would you do in such situation if that wasn't case of functions. What if th
 deftype uintmax_t(*FibonacciImplementation)(int n);
 {% endhighlight %}
 
-Let's say you have to implement program that compares different implementation of fibanacci algorithm. All of them have same signature. They take `int` and return large number that probably will exceed `int` range. And that's what excactly that `deltype` statement mean. It defines alias to `function pointer`.
+Let's say you have to implement program that compares different implementation of fibanacci algorithm. All of them have same signature. They take `int` and return large number that probably will exceed `int` range and that's what excactly that `deltype` statement mean. It defines alias to `function pointer`.
 
 {% highlight c %}
     FibonacciImplementation testy[] = { fiboCondensed,fiboZwykly };
