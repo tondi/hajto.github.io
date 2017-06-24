@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Pointers in C in depth"
+title: "Few words about pointesrs"
 status: released
 type: post
 comments: true
