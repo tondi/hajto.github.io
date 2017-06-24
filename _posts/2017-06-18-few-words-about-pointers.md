@@ -107,7 +107,7 @@ for(int i=0; i < MAX; i++){
 
 Let's say you have to write a program that compares different implementation of same algorithm and measure it's performance. You have come to point when your `main` function is result of copiyng and pasting same code over and over and only one line changes. Situations like this always tingle my `don't repeat yurself nerve`.
 
-What would you do in such situation if that wasn't case of functions. What if that was simple that. You would probably put into array and iterate over with some kind of loop. What if I told you that you can actually do that.
+What would you do in such situation if that wasn't case of functions. What if that was as simple that. You would probably put into array and iterate over with some kind of loop. What if I told you that you can actually do that.
 
 {% highlight c%}
 deftype uintmax_t(*FibonacciImplementation)(int n);
