@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Handling binary files in C"
-status: draft
+status: released
 type: post
 comments: true
 list: etut
@@ -122,7 +122,7 @@ Now you need to just close the file and voila! You've done it!
 Writing things to files isn't useful at all when you can't read what you've written. But really, it is really straight forward. You have to do everything you have already done, but in reverse! Instead of using `fwrite` you have to use `fread`. It's as simple as that! Mostly...
 
 {% highlight c %}
-  fread(&no_items, sizeof(unsigned int), 1, pf);
+    fread(&no_items, sizeof(unsigned int), 1, pf);
 	file_desc = (__int64 *)malloc((no_items + 1) * sizeof(__int64));
 	if(!file_desc)
 		handle_error(MEMORY_ALLOCATION_ERROR);
@@ -131,17 +131,17 @@ Writing things to files isn't useful at all when you can't read what you've writ
 	{
 		_fseeki64(pf, file_desc[it], SEEK_SET);
 		TaxiRide* ride = NULL;
-    TaxiWriteHelper* helper = NULL;
-    char buffer[512];
+        TaxiWriteHelper* helper = NULL;
+        char buffer[512];
 
-  	fread(helper, sizeof(TaxiRideHelper), 1, pf);
-  	fread(ride, sizeof(TaxiRide), 1, pf);
-  	ride->start = NULL;
-    ride->end = NULL;
-  	fread(buffer, sizeof(char), (size_t)writeHelper.start_length, pf);
-  	//Allocate and copy buffer to start
-    fread(buffer, sizeof(char), (size_t)writeHelper.end_length, pf);
-  	//Allocate and copy buffer to end
+        fread(helper, sizeof(TaxiRideHelper), 1, pf);
+        fread(ride, sizeof(TaxiRide), 1, pf);
+        ride->start = NULL;
+        ride->end = NULL;
+        fread(buffer, sizeof(char), (size_t)writeHelper.start_length, pf);
+        //Allocate and copy buffer to start
+        fread(buffer, sizeof(char), (size_t)writeHelper.end_length, pf);
+        //Allocate and copy buffer to end
 	}
 {% endhighlight %}
 
