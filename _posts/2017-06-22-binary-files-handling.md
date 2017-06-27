@@ -99,21 +99,22 @@ Once we've done that we can proceed with writing all the structures in our colle
 
 {% highlight c%}
 for (it = 0; it < no_items; ++it)
-	{
+{
     //Elem is nth element of your collection
-		file_desc[it] = ftell(pf);
+	file_desc[it] = ftell(pf);
     TaxiRide* ride = (TaxiRide*)elem;
     TaxiWriteHelper helper = { (unsigned int)(strlen(ride->start) + 1), (unsigned int)(strlen(ride->end) + 1) };
     fwrite(&helper, sizeof(TaxiWriteHelper), 1, file);
     fwrite(ride, sizeof(TaxiRide), 1, file);
     fwrite(ride->surname, sizeof(char), helper.start_length, file);
     fwrite(ride->surname, sizeof(char), helper.end_length, file);
-	}
+}
 
-	file_desc[it] = ftell(pf);
+file_desc[it] = ftell(pf);
 
-	_fseeki64(pf, sizeof(unsigned int), SEEK_SET);
-	fwrite(file_desc, sizeof(__int64), no_items + 1, pf);
+_fseeki64(pf, sizeof(unsigned int), SEEK_SET);
+fwrite(file_desc, sizeof(__int64), no_items + 1, pf);
+
 {% endhighlight %}
 
 Now you need to just close the file and voila! You've done it!
