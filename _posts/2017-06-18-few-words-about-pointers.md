@@ -1,6 +1,6 @@
 ---
 layout: post
-title: "Few words about pointesrs"
+title: "Few words about pointers"
 status: released
 type: post
 comments: true
