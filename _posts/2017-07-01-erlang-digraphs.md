@@ -21,7 +21,7 @@ iex(1)> graph = :digraph.new()
  #Reference<0.3992624098.55705602.46772>, true}
 {% endhighlight %}
 
-If you ran it in REPL you should get five element tupple with three `#Reference<Something>` thingies. Don't bother with what's inside just for now.
+If you run it in REPL you should get five element tupple with three `#Reference<Something>` thingies. Don't bother with what's inside just for now.
 
 After graph is successfuly initialized you can add vertices and edges.
 
@@ -73,7 +73,7 @@ First thing we should do to find enlightment is to look up how it is actually im
 	      cyclic = true  :: boolean()}).
 {% endhighlight %}
 
-It is quite similar to our tupple? If record is similar to struct where did the names go? Actually.. In Erlang records are bare tupples. The names exist only in compile time, after that they are gone. It is quite troublesome approach, but it clarifies a lot of what we can see right now. `vtab` is first element, `etab` is second and so worth and so on.
+It is quite similar to our tuple? If record is similar to struct where did the names go? Actually.. In Erlang records are bare tuples. The names exist only in compile time, after that they are gone. It is quite troublesome approach, but it clarifies a lot of what we can see right now. `vtab` is first element, `etab` is second and so worth and so on.
 
 You might also have realized that all of the operations we performed previously were impure. That's because `digraph` is internally represented as set of three `ets` tables and those weird `#Reference` are actually results of creating new unnamed `Erlang Term Storage` table.
 
