@@ -86,6 +86,7 @@ iex(15)> {_, vertices, edges, neighbours,cyclic} = graph
  #Reference<0.3992624098.55705602.46772>, true}
 
 iex(16)> :ets.tab2list(vertices)
+
 [{"London", []}, {"Warszawa", []}, {"New York", []}, {"San Francisco", []}]
 iex(17)> :ets.tab2list(edges)
 [{[:"$e" | 0], "London", "New York", []},
@@ -94,12 +95,12 @@ iex(17)> :ets.tab2list(edges)
  {[:"$e" | 1], "New York", "San Francisco", []}]
 
 iex(18)> :ets.tab2list(neighbours)
-[{{:out, "Warszawa"}, [:"$e" | 4]}, {:"$eid", 5}, {:"$vid", 0},
- {{:in, "Warszawa"}, [:"$e" | 2]}, {{:out, "London"}, [:"$e" | 0]},
- {{:out, "London"}, [:"$e" | 2]}, {{:out, "London"}, [:"$e" | 3]},
- {{:out, "New York"}, [:"$e" | 1]}, {{:in, "London"}, [:"$e" | 4]},
- {{:in, "San Francisco"}, [:"$e" | 1]}, {{:in, "San Francisco"}, [:"$e" | 3]},
- {{:in, "New York"}, [:"$e" | 0]}]
+[&#123&#123:out, "Warszawa"}, [:"$e" | 4]}, {:"$eid", 5}, {:"$vid", 0},
+ &#123&#123:in, "Warszawa"}, [:"$e" | 2]}, &#123&#123:out, "London"}, [:"$e" | 0]},
+ &#123&#123:out, "London"}, [:"$e" | 2]}, &#123&#123:out, "London"}, [:"$e" | 3]},
+ &#123&#123:out, "New York"}, [:"$e" | 1]}, &#123&#123:in, "London"}, [:"$e" | 4]},
+ &#123&#123:in, "San Francisco"}, [:"$e" | 1]}, &#123&#123:in, "San Francisco"}, [:"$e" | 3]},
+ &#123&#123:in, "New York"}, [:"$e" | 0]}]
 {% endhighlight %}
 
 We can see a lot of interesting information here. As we can see edges are actually numbered. Even more interesting is neighbours table which kind of resembles math notation of Neighbour relation.
