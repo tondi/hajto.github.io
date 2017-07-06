@@ -73,7 +73,7 @@ First thing we should do to find enlightment is to look up how it is actually im
 	      cyclic = true  :: boolean()}).
 {% endhighlight %}
 
-It is quite similar to our tuple? If record is similar to struct where did the names go? Actually.. In Erlang records are bare tuples. The names exist only in compile time, after that they are gone. It is quite troublesome approach, but it clarifies a lot of what we can see right now. `vtab` is first element, `etab` is second and so worth and so on.
+It is quite similar to our tuple? If record is similar to struct where did the names go? Actually.. In Erlang records are bare tuples. The names exist only in compile time, after that they are gone. It is quite troublesome approach, but it clarifies a lot of what we can see right now. `vtab` is first element, `etab` is second and so forth and so on.
 
 You might also have realized that all of the operations we performed previously were impure. That's because `digraph` is internally represented as set of three `ets` tables and those weird `#Reference` are actually results of creating new unnamed `Erlang Term Storage` table.
 
