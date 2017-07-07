@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Erlang Digraph"
-status: draft
+status: released
 type: post
 comments: true
 list: etut
@@ -51,6 +51,28 @@ Now you can for example find shortest road between two vertices.
 iex(13)> :digraph.get_path(graph,warsaw, sf)
 ["Warszawa", "London", "San Francisco"]
 {% endhighlight %}
+
+# Magic applied
+
+Let's write simple implementation of DFS. Depth-first search is a common algorithm of checking whether you can go from one vertex to rest of them. In my implementation it will just return list of visited vertices.
+
+{% highlight elixir%}
+defmodule GraphHelper do
+
+  def dfs(graph, vertex, acc \\ []) do
+    case vertex in acc do
+      :false ->
+        acc = [vertex | acc]
+        Enum.reduce(:digraph.out_neighbours(graph, vertex), acc, fn elem, acc ->
+          dfs(graph, elem, acc)
+        end)
+      :true -> acc
+    end
+  end
+
+end
+{% endhighlight %}
+Runnable example available <a href="http://elixirplayground.com?gist=5ae71402d139e741460f265500baba34"> here</a>.
 
 # Nitty gritty details
 
