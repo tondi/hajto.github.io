@@ -56,3 +56,24 @@ function PrintDivById(id) {
   WinPrint.focus();
 }
 {% endhighlight%}
+
+And in a bit more functional way..
+
+{% highlight javascript %}
+//By Baransu
+function printDivById(id) {
+  const prtContent = document.getElementById(id);
+  const windowPrint = window.open("", "", "left=0,top=0,width=800,height=900,toolbar=0,scrollbars=0,status=0");
+  const documentHtml = [
+    "<html><head>",
+    document.getElementsByTagName("style").map(style => style.outerHTML).join(""),
+    document.getElementsByTagName("link").map(link => link.outerHTML).join(""),
+    "</head><body>",
+    prtContent.outerHTML,
+    "</body></html>"
+  ].join("")
+  windowPrint.document.write(document_html);
+  windowPrint.document.close();
+  windowPrint.focus();
+}
+{% endhighlight%}
