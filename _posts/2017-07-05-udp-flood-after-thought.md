@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "UDP Flood after thought"
-status: draft
+status: released
 type: post
 comments: true
 list: general
@@ -92,4 +92,4 @@ bytes reason
 
 At that point I've had enough. I decided to take additional security measures. First of all I checked why Firewall wasn't working. For some reason it appeared to be offline... Ok.. The quickest and safest solution would make new, fresh config. I've also decided to not use Login/Password credentials for SSH and use public/private key pairs for authentication only. I've also disabled login for root.
 
-After those actions amount of attempts logged in authlog severaly dropped. It has been few days since I've done this and it seems to solve the problem. I learned my lesson the hard way. I suggest you should do the same, before you are going to be victim of such vile actions.
+After those actions amount of attempts logged in authlog severaly dropped. It has been few days since I've done this and it seems to solve the problem. I learned my lesson the hard way. I suggest you should not do the same and before you are going to be victim of such vile actions secure yourself.
