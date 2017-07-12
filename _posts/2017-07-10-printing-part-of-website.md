@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Printing part of website a.k.a. how I got my CV printed"
-status: draft
+status: released
 type: post
 comments: true
 list: general
